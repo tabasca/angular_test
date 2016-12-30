@@ -88,6 +88,16 @@ gulp.task('serve:vendor-js', () => {
         .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('serve:angular-js', () => {
+    return gulp.src(['./bower_components/angular/angular.min.js', './bower_components/angular-route/angular-route.min.js'])
+        .pipe($.concat('angular.js'))
+        .on('error', $.notify.onError(function(error) {
+            return 'Error: ' + error.message;
+        }))
+        .pipe(gulp.dest(PUBLIC_DIR + '/js'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task('dist:html', () => {
     return gulp.src(SOURCES_DIR + '/*.html')
         .pipe(gulp.dest(PUBLIC_DIR + '/'))
@@ -114,7 +124,7 @@ gulp.task('dist:vendor-js', () => {
         .pipe(gulp.dest(PUBLIC_DIR + '/js'));
 });
 
-gulp.task('serve:start', ['serve:sass', 'serve:images', 'serve:html', 'serve:vendor-js', 'serve:static', 'watch', 'web-bs'], () => {
+gulp.task('serve:start', ['serve:sass', 'serve:images', 'serve:html', 'serve:angular-js', 'serve:vendor-js', 'serve:static', 'watch', 'web-bs'], () => {
     // console.log(browserifyConfig.entryFile);
 });
 
