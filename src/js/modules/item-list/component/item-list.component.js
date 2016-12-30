@@ -1,7 +1,7 @@
 'use strict';
 
 // Register `itemList` component, along with its associated controller and template
-export default angular.
+angular.
     module('itemList').
     component('itemList', {
         template:
