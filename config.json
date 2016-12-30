@@ -1,0 +1,9 @@
+{
+  "bundler": {
+    "main": {
+      "filename": "main.js",
+      "filepath": "./src/js/",
+      "bundlename": "main.bundle.js"
+    }
+  }
+}
