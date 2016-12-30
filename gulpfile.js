@@ -42,27 +42,27 @@ gulp.task('style', function () {
     .pipe(gulp.dest('build/css'));
 });
 
-// gulp.task('scripts', function () {
-//   return gulp.src('src/js/*.js')
-//     .pipe(plumber())
-//     .pipe(webpack({
-//       devtool:'source-map',
-//       module: {
-//         loaders: [
-//           { test: /\.js$/,
-//             loader: 'babel-loader',
-//             query: {
-//               presets: ['es2015']
-//             }},
-//         ],
-//       },
-//       output:{
-//         filename:'main.js'
-//       }
-//     }))
-//     .pipe(gulp.dest('build/js/'))
-//     .pipe(server.stream());
-// });
+gulp.task('scripts', function () {
+  return gulp.src('src/js/*.js')
+    .pipe(plumber())
+    .pipe(webpack({
+      devtool:'source-map',
+      module: {
+        loaders: [
+          { test: /\.js$/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }},
+        ],
+      },
+      output:{
+        filename:'main.js'
+      }
+    }))
+    .pipe(gulp.dest('build/js/'))
+    .pipe(server.stream());
+});
 
 gulp.task('test', function () {
   return gulp
@@ -91,7 +91,7 @@ gulp.task('copy-html', function () {
     .pipe(server.stream());
 });
 
-gulp.task('copy', ['copy-html', 'style'], function () {
+gulp.task('copy', ['copy-html', 'scripts', 'style'], function () {
   return gulp.src([
     'src/fonts/**/*.{woff,woff2}',
     'src/img/*.*'
@@ -114,7 +114,7 @@ gulp.task('serve', ['assemble'], function () {
 
   gulp.watch('src/sass/**/*.{scss,sass}', ['style']);
   gulp.watch('src/*.html', ['copy-html']);
-  //gulp.watch('src/js/*.js', ['scripts']).on('change', server.reload);
+  gulp.watch('src/js/*.js', ['scripts']).on('change', server.reload);
 });
 
 gulp.task('assemble', ['clean'], function () {
