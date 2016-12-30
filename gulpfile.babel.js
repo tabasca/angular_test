@@ -89,8 +89,19 @@ gulp.task('serve:vendor-js', () => {
 });
 
 gulp.task('serve:angular-js', () => {
-    return gulp.src(['./bower_components/angular/angular.min.js', './bower_components/angular-route/angular-route.min.js'])
+    return gulp.src(['./bower_components/angular/angular.js', './bower_components/angular-route/angular-route.min.js'])
         .pipe($.concat('angular.js'))
+        .on('error', $.notify.onError(function(error) {
+            return 'Error: ' + error.message;
+        }))
+        .pipe(gulp.dest(PUBLIC_DIR + '/js'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('angular-modules', () => {
+    console.log('starting modules');
+    return gulp.src(SOURCES_DIR + '/js/modules/**/*.js')
+        .pipe($.concat('modules.js'))
         .on('error', $.notify.onError(function(error) {
             return 'Error: ' + error.message;
         }))
@@ -124,7 +135,7 @@ gulp.task('dist:vendor-js', () => {
         .pipe(gulp.dest(PUBLIC_DIR + '/js'));
 });
 
-gulp.task('serve:start', ['serve:sass', 'serve:images', 'serve:html', 'serve:angular-js', 'serve:vendor-js', 'serve:static', 'watch', 'web-bs'], () => {
+gulp.task('serve:start', ['serve:sass', 'serve:images', 'serve:html', 'serve:angular-js', 'angular-modules', 'serve:vendor-js', 'serve:static', 'watch', 'web-bs'], () => {
     // console.log(browserifyConfig.entryFile);
 });
 
@@ -222,7 +233,7 @@ function makeBundle(name, bundlename, cb){
 
 }
 
-gulp.task('js-build', () => {
+gulp.task('js-build', ['angular-modules'], () => {
     for (let i in bundler){
         if (bundler.hasOwnProperty(i)){
 
