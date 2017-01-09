@@ -1,8 +1,8 @@
 {
   "bundler": {
     "main": {
-      "filename": "main.js",
-      "filepath": "./src/js/",
+      "filename": "app.js",
+      "filepath": "./app/js/",
       "bundlename": "main.bundle.js"
     }
   }

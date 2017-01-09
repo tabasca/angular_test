@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const $ = gulpLoadPlugins({camelize: true});
 
 const PUBLIC_DIR = './build';
-const SOURCES_DIR = './src';
+const SOURCES_DIR = './app';
 
 var sassConfig = {
     sassPath: './' + SOURCES_DIR + '/css',
@@ -72,9 +72,16 @@ gulp.task('dist:sass', () => {
         .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('serve:html', () => {
+gulp.task('serve:html', ['angular-templates'], () => {
     return gulp.src(SOURCES_DIR + '/*.html')
         .pipe(gulp.dest(PUBLIC_DIR + '/'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('angular-templates', () => {
+    console.log('templates...');
+    return gulp.src(SOURCES_DIR + '/js/modules/**/*.html')
+        .pipe(gulp.dest(PUBLIC_DIR + '/js/layout'))
         .pipe(browserSync.reload({stream: true}));
 });
 
@@ -99,7 +106,6 @@ gulp.task('serve:angular-js', () => {
 });
 
 gulp.task('angular-modules', () => {
-    console.log('starting modules');
     return gulp.src(SOURCES_DIR + '/js/modules/**/*.js')
         .pipe($.concat('modules.js'))
         .on('error', $.notify.onError(function(error) {
@@ -285,8 +291,8 @@ gulp.task('web', () => {
 
 gulp.task('watch', () => {
     gulp.watch(['css/**'], {cwd: SOURCES_DIR + '/'}, ['serve:sass']);
-    gulp.watch(['js/**'], {cwd: SOURCES_DIR + '/'}, ['js-build']);
-    gulp.watch(['*.html', 'layout/**/*.html'], {cwd: SOURCES_DIR + '/'}, ['serve:html']);
+    gulp.watch(['js/*.js', 'js/**/*.js'], {cwd: SOURCES_DIR + '/'}, ['js-build']);
+    gulp.watch(['*.html', 'layout/**/*.html', 'js/**/*.html'], {cwd: SOURCES_DIR + '/'}, ['serve:html']);
     gulp.watch(['static/**'], {cwd: SOURCES_DIR + '/'}, ['serve:static']);
     gulp.watch(['img/**/*.svg', 'img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.png', 'img/**/*.bmp'], {cwd: SOURCES_DIR + '/'}, ['serve:images']);
     //gulp.watch([SOURCES_DIR + '/js/*.js'], ['serve:js']);

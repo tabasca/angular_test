@@ -1,0 +1,6 @@
+<ul class="column">
+    <li ng-repeat="item in $ctrl.items">
+        <span>{{item.name}}</span>
+        <span ng-repeat="flag in item.flags">{{flag}}</span>
+    </li>
+</ul>
