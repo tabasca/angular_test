@@ -2,13 +2,17 @@
     <p>
         Filters:
 
-        <div ng-init="group = ($ctrl.items | groupBy: 'flags')">
-            {{$ctrl.items}}
-        </div>
+        <!--<div ng-init="group = ($ctrl.items | groupBy: 'flags')">-->
+            <!--{{$ctrl.items}}-->
+        <!--</div>-->
 
         <!--<div ng-repeat="item in $ctrl.items">-->
             <!--<input type="checkbox" data-checklist-model="user.items" data-checklist-value="item"/>{{item.name}}-->
         <!--</div>-->
+
+        <div ng-repeat="flag in $ctrl.flags">
+            <input type="checkbox" ng-click="$ctrl.sortBy(flag)"> {{flag}}
+        </div>
 
 
         <!--<input type="checkbox" ng-click="$ctrl.sortBy('flash')">-->
