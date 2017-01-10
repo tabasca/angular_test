@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('leftColumn', []);
+angular.module('leftColumn', ['itemList']);

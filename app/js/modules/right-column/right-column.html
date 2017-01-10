@@ -1,0 +1,23 @@
+<div class="column column_right">
+    <p>
+        Filters:
+
+        <div ng-init="group = ($ctrl.items | groupBy: 'flags')">
+            {{$ctrl.items}}
+        </div>
+
+        <!--<div ng-repeat="item in $ctrl.items">-->
+            <!--<input type="checkbox" data-checklist-model="user.items" data-checklist-value="item"/>{{item.name}}-->
+        <!--</div>-->
+
+
+        <!--<input type="checkbox" ng-click="$ctrl.sortBy('flash')">-->
+        <!--<input type="checkbox" ng-click="$ctrl.sortBy('sun')">-->
+        <!--<input type="checkbox" ng-click="$ctrl.sortBy('heart')">-->
+        <!--<input type="checkbox" ng-click="$ctrl.sortBy('flower')">-->
+    </p>
+
+    <pre>Sort by = {{$ctrl.propertyName}} </pre>
+
+    <item-list items="$ctrl.items" initial="$ctrl.initial"></item-list>-->
+</div>
