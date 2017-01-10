@@ -4,6 +4,11 @@
       "filename": "app.js",
       "filepath": "./app/js/",
       "bundlename": "main.bundle.js"
+    },
+    "config": {
+      "filename": "app.config.js",
+      "filepath": "./app/js/",
+      "bundlename": "config.bundle.js"
     }
   }
 }

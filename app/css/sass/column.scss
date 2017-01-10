@@ -1,11 +1,14 @@
 .column {
-  width: 200px;
+  width: 400px;
   height: 400px;
   background: cornflowerblue;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
   overflow-y: scroll;
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   & li {
     margin: 5px 10px;
     padding: 5px 10px;
