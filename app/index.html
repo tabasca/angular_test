@@ -7,27 +7,10 @@
     <script src="/js/angular.js"></script>
     <script src="/js/modules.js"></script>
     <script src="/js/main.bundle.js"></script>
-    <script src="/js/config.bundle.js"></script>
 </head>
 <body>
 
-    <div class="wrapper">
-
-        <left-column></left-column>
-
-        <div class="column column_result">
-
-            <h2>INFO</h2>
-
-            <span class="column__text">Name: {{item.name}}</span>
-            <span class="column__text">
-                Flags:
-                <span ng-repeat="flag in item.flags" class="icon icon_{{flag}}"></span>
-            </span>
-        </div>
-
-        <right-column></right-column>
-    </div>
+    <main-view></main-view>
 
 </body>
 </html>

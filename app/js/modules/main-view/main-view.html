@@ -1,0 +1,18 @@
+<div class="wrapper">
+
+	<left-column selected="$ctrl.selected"></left-column>
+
+	<div class="column column_result">
+
+		<h2>INFO</h2>
+
+		<span class="column__text">Name: {{$ctrl.selected.name}}</span>
+		<span class="column__text">
+			Flags:
+			<span ng-repeat="flag in $ctrl.selected.flags" class="icon icon_{{flag}}"></span>
+		</span>
+	</div>
+
+	<right-column selected="$ctrl.selected"></right-column>
+
+</div>

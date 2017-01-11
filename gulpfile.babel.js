@@ -34,16 +34,11 @@ var jsConfig = {
 
 // Main Tasks
 gulp.task('serve', () => runSequence('serve:clean', 'serve:start'));
-gulp.task('dist', () => runSequence('dist:clean', 'dist:build', 'web', () => {
-    open('http://localhost:' + PORT)
-}));
-gulp.task('auto-build', () => runSequence('dist:clean', 'dist:build'));
-gulp.task('clean', ['dist:clean, serve:clean']);
+gulp.task('clean', ['serve:clean']);
 gulp.task('open', () => open('http://localhost:' + PORT));
 
 // Remove all built files
 gulp.task('serve:clean', cb => del([PUBLIC_DIR + '/*', '!' + PUBLIC_DIR + '/.gitkeep'], {dot: true}, cb));
-gulp.task('dist:clean', cb => del([PUBLIC_DIR + '/*', '!' + PUBLIC_DIR + '/.gitkeep'], {dot: true}, cb));
 
 // Styles handling
 gulp.task('serve:sass', () => {
@@ -51,19 +46,6 @@ gulp.task('serve:sass', () => {
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             outputStyle: 'compact'
-        }).on('error', $.notify.onError(function (error) {
-            return 'Error: ' + error.message;
-        })))
-        .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest(PUBLIC_DIR + '/css'))
-        .pipe(browserSync.reload({stream: true}))
-});
-
-gulp.task('dist:sass', () => {
-    return gulp.src(sassConfig.sassPath + '/*.scss')
-        .pipe($.sourcemaps.init())
-        .pipe($.sass({
-            outputStyle: 'compressed'
         }).on('error', $.notify.onError(function (error) {
             return 'Error: ' + error.message;
         })))
@@ -115,46 +97,8 @@ gulp.task('angular-modules', () => {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('dist:html', () => {
-    return gulp.src(SOURCES_DIR + '/*.html')
-        .pipe(gulp.dest(PUBLIC_DIR + '/'))
-        .pipe(browserSync.reload({stream: true}));
-});
-
-gulp.task('dist:vendor-js', () => {
-    return gulp.src(jsConfig.vendorPath + '/*.js')
-        .pipe($.concat('vendor.js')
-            .on('error', $.notify.onError(function (error) {
-                return 'Error: ' + error.message;
-            }))
-        )
-        .pipe($.minify({
-                ext:{
-                    min:'.js'
-                },
-                noSource: true
-            })
-                .on('error', $.notify.onError(function (error) {
-                    return 'Error: ' + error.message;
-                }))
-        )
-        .pipe(gulp.dest(PUBLIC_DIR + '/js'));
-});
-
 gulp.task('serve:start', ['serve:sass', 'serve:images', 'serve:html', 'serve:angular-js', 'angular-modules', 'serve:vendor-js', 'serve:static', 'watch', 'web-bs'], () => {
     // console.log(browserifyConfig.entryFile);
-});
-
-gulp.task('dist:build', ['dist:sass', 'dist:images', 'dist:html', 'dist:static', 'lint', 'build-once', 'dist:vendor-js']);
-
-gulp.task('dist:images', () => {
-    return gulp.src([SOURCES_DIR + '/img/**/*'])
-        .pipe($.image({
-
-        })).on('error', $.notify.onError(function (error) {
-            return 'Error: ' + error.message;
-        }))
-        .pipe(gulp.dest(PUBLIC_DIR + '/img/'));
 });
 
 gulp.task('serve:images', () => {
@@ -166,11 +110,6 @@ gulp.task('serve:images', () => {
 gulp.task('serve:static', () => {
     return gulp.src([SOURCES_DIR + '/static/**/*'])
         .pipe($.changed(PUBLIC_DIR + '/'))
-        .pipe(gulp.dest(PUBLIC_DIR + '/'))
-});
-
-gulp.task('dist:static', () => {
-    return gulp.src([SOURCES_DIR + '/static/**/*'])
         .pipe(gulp.dest(PUBLIC_DIR + '/'))
 });
 
@@ -295,6 +234,4 @@ gulp.task('watch', () => {
     gulp.watch(['*.html', 'layout/**/*.html', 'js/**/*.html'], {cwd: SOURCES_DIR + '/'}, ['serve:html']);
     gulp.watch(['static/**'], {cwd: SOURCES_DIR + '/'}, ['serve:static']);
     gulp.watch(['img/**/*.svg', 'img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.png', 'img/**/*.bmp'], {cwd: SOURCES_DIR + '/'}, ['serve:images']);
-    //gulp.watch([SOURCES_DIR + '/js/*.js'], ['serve:js']);
-    //gulp.watch([SOURCES_DIR + '/css/*.scss'], ['serve:sass']);
 });

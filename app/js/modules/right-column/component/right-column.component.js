@@ -5,8 +5,11 @@ angular.
     module('rightColumn').
         component('rightColumn', {
             templateUrl: 'js/layout/right-column/right-column.html',
-            controller: ['$scope', 'filterFilter',
-                function RightColumnController($scope, filterFilter) {
+            bindings: {
+                selected: '='
+            },
+            controller: ['$http', 'filterFilter',
+                function RightColumnController($http, filterFilter) {
 
                     var self = this;
 
@@ -14,7 +17,14 @@ angular.
 
                     this.checkedFlags = [];
 
+                    $http.get('json/names.json').then(function(response) {
+                        self.items = response.data;
+                        self.originalItems = self.items;
+                    });
+
                     self.sortBy = function (prop) {
+
+                        self.items = self.originalItems;
 
                         if (self.checkedFlags.indexOf(prop) === -1) {
                             self.checkedFlags.push(prop);
@@ -22,7 +32,6 @@ angular.
                             self.checkedFlags.splice(self.checkedFlags.indexOf(prop), 1);
                         }
 
-                        self.items = self.initial;
                         self.filteredItems = [];
 
                         self.checkedFlags.forEach(function (flag) {

@@ -5,32 +5,25 @@ angular.
     module('itemList').
     component('itemList', {
         templateUrl: 'js/layout/item-list/item-list.html',
-        controller: ['$http', '$scope',
-            function ItemListController($http, $scope) {
+        controller: ['$scope',
+            function ItemListController($scope) {
 
                 var self = this;
-
-                $http.get('json/items.json').then(function(response) {
-                    self.items = response.data;
-                    self.initial = self.items;
-                });
 
                 $scope.checkedItem = null;
 
                 $scope.checkItem = function (item) {
-                    $scope.selected = ($scope.selected === item ? null : item);
-                    $scope.$parent.$parent.item = ($scope.selected === item ? item : null);
+                    self.selected = (self.selected === item ? null : item);
                 };
                 
                 $scope.isChecked = function (item) {
-                    return $scope.selected === item;
+                    return self.selected === item;
                 }
 
             }
         ],
         bindings: {
-            items: '=',
-            initial: '=',
+            items: '<',
             selected: '='
         }
     });

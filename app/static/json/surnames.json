@@ -1,0 +1,1466 @@
+[
+  {
+	"index": 0,
+	"name": "Poole",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 1,
+	"name": "Baker",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 2,
+	"name": "Dorsey",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 3,
+	"name": "Clark",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 4,
+	"name": "Black",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 5,
+	"name": "Saunders",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 6,
+	"name": "Diaz",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 7,
+	"name": "Yang",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "flash",
+	  "sun"
+	],
+	"flags": [
+	  "sun",
+	  "heart",
+	  "flash"
+	]
+  },
+  {
+	"index": 8,
+	"name": "Sharpe",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 9,
+	"name": "Melendez",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 10,
+	"name": "Alvarado",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "flash",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "heart",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 11,
+	"name": "Britt",
+	"tags": [
+	  "flower",
+	  "sun",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "flower",
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 12,
+	"name": "Hobbs",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 13,
+	"name": "Blake",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 14,
+	"name": "Calhoun",
+	"tags": [
+	  "flower",
+	  "flower",
+	  "flash",
+	  "heart"
+	],
+	"flags": [
+	  "flower",
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 15,
+	"name": "Barrett",
+	"tags": [
+	  "flower",
+	  "flower",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "flower",
+	  "sun"
+	]
+  },
+  {
+	"index": 16,
+	"name": "Mcclain",
+	"tags": [
+	  "flower",
+	  "flash",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 17,
+	"name": "Hunt",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "sun",
+	  "heart"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 18,
+	"name": "Berg",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 19,
+	"name": "Levine",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "sun",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 20,
+	"name": "Larsen",
+	"tags": [
+	  "flower",
+	  "flash",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "flower",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 21,
+	"name": "Manning",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 22,
+	"name": "Jarvis",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "flash",
+	  "heart"
+	],
+	"flags": [
+	  "flash",
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 23,
+	"name": "Lloyd",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "flower",
+	  "flower"
+	],
+	"flags": [
+	  "sun",
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 24,
+	"name": "Lowery",
+	"tags": [
+	  "flower",
+	  "sun",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "sun"
+	]
+  },
+  {
+	"index": 25,
+	"name": "Beach",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 26,
+	"name": "Steele",
+	"tags": [
+	  "flower",
+	  "sun",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "flower",
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 27,
+	"name": "Knapp",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 28,
+	"name": "Langley",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "heart",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 29,
+	"name": "Lucas",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "sun",
+	  "heart"
+	],
+	"flags": [
+	  "flash",
+	  "flower",
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 30,
+	"name": "Cotton",
+	"tags": [
+	  "flower",
+	  "flower",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 31,
+	"name": "Hammond",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 32,
+	"name": "Lambert",
+	"tags": [
+	  "flower",
+	  "sun",
+	  "flash",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 33,
+	"name": "Daniels",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 34,
+	"name": "Gallegos",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 35,
+	"name": "Cole",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "sun",
+	  "flash",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 36,
+	"name": "Hebert",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 37,
+	"name": "Pratt",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 38,
+	"name": "Fisher",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "heart",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 39,
+	"name": "Sanders",
+	"tags": [
+	  "flower",
+	  "flower",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "flower",
+	  "heart"
+	]
+  },
+  {
+	"index": 40,
+	"name": "Tyler",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 41,
+	"name": "Hancock",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 42,
+	"name": "Bates",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "sun",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 43,
+	"name": "Howard",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "flower",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 44,
+	"name": "Kidd",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 45,
+	"name": "Arnold",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 46,
+	"name": "Ruiz",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flash"
+	]
+  },
+  {
+	"index": 47,
+	"name": "Bowers",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "flower",
+	  "heart"
+	],
+	"flags": [
+	  "flower",
+	  "heart"
+	]
+  },
+  {
+	"index": 48,
+	"name": "Mcfadden",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "heart",
+	  "flash"
+	]
+  },
+  {
+	"index": 49,
+	"name": "Cantrell",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 50,
+	"name": "Ewing",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 51,
+	"name": "Barnett",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "flower",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 52,
+	"name": "Vaughan",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flower",
+	  "heart"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 53,
+	"name": "Parrish",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "heart",
+	  "sun"
+	],
+	"flags": [
+	  "flash",
+	  "flower",
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 54,
+	"name": "Mack",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "flash",
+	  "heart"
+	],
+	"flags": [
+	  "flash",
+	  "flower",
+	  "heart"
+	]
+  },
+  {
+	"index": 55,
+	"name": "Cruz",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "flash",
+	  "heart"
+	],
+	"flags": [
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 56,
+	"name": "Rosales",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 57,
+	"name": "Huffman",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 58,
+	"name": "Beck",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "sun",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "heart",
+	  "flash"
+	]
+  },
+  {
+	"index": 59,
+	"name": "Cohen",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "heart",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "sun"
+	]
+  },
+  {
+	"index": 60,
+	"name": "Holman",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "sun",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "flower",
+	  "sun"
+	]
+  },
+  {
+	"index": 61,
+	"name": "Humphrey",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "flower",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "flower",
+	  "heart"
+	]
+  },
+  {
+	"index": 62,
+	"name": "Park",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "heart",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "flash"
+	]
+  },
+  {
+	"index": 63,
+	"name": "Mcdowell",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "flower",
+	  "heart"
+	],
+	"flags": [
+	  "flower",
+	  "heart"
+	]
+  },
+  {
+	"index": 64,
+	"name": "Campbell",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "sun",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 65,
+	"name": "Koch",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "sun",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 66,
+	"name": "Castro",
+	"tags": [
+	  "sun",
+	  "flower",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 67,
+	"name": "Graham",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 68,
+	"name": "Baxter",
+	"tags": [
+	  "sun",
+	  "flower",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 69,
+	"name": "Pace",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flash"
+	]
+  },
+  {
+	"index": 70,
+	"name": "Cross",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "flash",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 71,
+	"name": "Crawford",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "sun",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 72,
+	"name": "Holland",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "flash",
+	  "heart"
+	],
+	"flags": [
+	  "sun",
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 73,
+	"name": "Whitfield",
+	"tags": [
+	  "flower",
+	  "heart",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flower",
+	  "heart",
+	  "flash"
+	]
+  },
+  {
+	"index": 74,
+	"name": "Solomon",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 75,
+	"name": "Mcmahon",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "sun",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 76,
+	"name": "Holmes",
+	"tags": [
+	  "sun",
+	  "flower",
+	  "flash",
+	  "sun"
+	],
+	"flags": [
+	  "sun",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 77,
+	"name": "Mercado",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 78,
+	"name": "Weber",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 79,
+	"name": "Dillard",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 80,
+	"name": "Mooney",
+	"tags": [
+	  "flower",
+	  "flash",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "flower",
+	  "flash",
+	  "heart"
+	]
+  },
+  {
+	"index": 81,
+	"name": "Santana",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 82,
+	"name": "Gilbert",
+	"tags": [
+	  "flower",
+	  "flower",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "flower",
+	  "flash"
+	]
+  },
+  {
+	"index": 83,
+	"name": "Vinson",
+	"tags": [
+	  "flash",
+	  "sun",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "flash",
+	  "sun",
+	  "heart"
+	]
+  },
+  {
+	"index": 84,
+	"name": "Hamilton",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "heart",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 85,
+	"name": "Tucker",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 86,
+	"name": "Kelly",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "flower",
+	  "sun"
+	]
+  },
+  {
+	"index": 87,
+	"name": "Henson",
+	"tags": [
+	  "flash",
+	  "flower",
+	  "flower",
+	  "flash"
+	],
+	"flags": [
+	  "flash",
+	  "flower"
+	]
+  },
+  {
+	"index": 88,
+	"name": "Terrell",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "flower",
+	  "heart"
+	],
+	"flags": [
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 89,
+	"name": "Avila",
+	"tags": [
+	  "sun",
+	  "flash",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 90,
+	"name": "Wagner",
+	"tags": [
+	  "sun",
+	  "sun",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 91,
+	"name": "Copeland",
+	"tags": [
+	  "flash",
+	  "heart",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "flash",
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 92,
+	"name": "Randolph",
+	"tags": [
+	  "flower",
+	  "flash",
+	  "flower",
+	  "sun"
+	],
+	"flags": [
+	  "flower",
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 93,
+	"name": "Logan",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flower"
+	]
+  },
+  {
+	"index": 94,
+	"name": "Bradshaw",
+	"tags": [
+	  "heart",
+	  "flower",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "heart",
+	  "flower",
+	  "sun"
+	]
+  },
+  {
+	"index": 95,
+	"name": "Howell",
+	"tags": [
+	  "heart",
+	  "heart",
+	  "heart",
+	  "heart"
+	],
+	"flags": [
+	  "heart"
+	]
+  },
+  {
+	"index": 96,
+	"name": "Jenkins",
+	"tags": [
+	  "flash",
+	  "flash",
+	  "sun",
+	  "sun"
+	],
+	"flags": [
+	  "flash",
+	  "sun"
+	]
+  },
+  {
+	"index": 97,
+	"name": "Shepard",
+	"tags": [
+	  "sun",
+	  "heart",
+	  "sun",
+	  "flower"
+	],
+	"flags": [
+	  "sun",
+	  "heart",
+	  "flower"
+	]
+  },
+  {
+	"index": 98,
+	"name": "Salazar",
+	"tags": [
+	  "heart",
+	  "sun",
+	  "flash",
+	  "flash"
+	],
+	"flags": [
+	  "heart",
+	  "sun",
+	  "flash"
+	]
+  },
+  {
+	"index": 99,
+	"name": "Cantu",
+	"tags": [
+	  "heart",
+	  "flash",
+	  "heart",
+	  "sun"
+	],
+	"flags": [
+	  "heart",
+	  "flash",
+	  "sun"
+	]
+  }
+]
