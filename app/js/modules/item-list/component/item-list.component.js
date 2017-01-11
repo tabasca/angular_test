@@ -5,8 +5,8 @@ angular.
     module('itemList').
     component('itemList', {
         templateUrl: 'js/layout/item-list/item-list.html',
-        controller: ['$http',
-            function ItemListController($http) {
+        controller: ['$http', '$scope',
+            function ItemListController($http, $scope) {
 
                 var self = this;
 
@@ -15,10 +15,22 @@ angular.
                     self.initial = self.items;
                 });
 
+                $scope.checkedItem = null;
+
+                $scope.checkItem = function (item) {
+                    $scope.selected = ($scope.selected === item ? null : item);
+                    $scope.$parent.$parent.item = ($scope.selected === item ? item : null);
+                };
+                
+                $scope.isChecked = function (item) {
+                    return $scope.selected === item;
+                }
+
             }
         ],
         bindings: {
             items: '=',
             initial: '=',
+            selected: '='
         }
     });

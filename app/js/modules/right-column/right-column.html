@@ -1,27 +1,14 @@
 <div class="column column_right">
-    <p>
+    <div>
         Filters:
 
-        <!--<div ng-init="group = ($ctrl.items | groupBy: 'flags')">-->
-            <!--{{$ctrl.items}}-->
-        <!--</div>-->
-
-        <!--<div ng-repeat="item in $ctrl.items">-->
-            <!--<input type="checkbox" data-checklist-model="user.items" data-checklist-value="item"/>{{item.name}}-->
-        <!--</div>-->
-
-        <div ng-repeat="flag in $ctrl.flags">
-            <input type="checkbox" ng-click="$ctrl.sortBy(flag)"> {{flag}}
+        <div class="filter__item" >
+            <label ng-repeat="flag in $ctrl.flags" class="icon icon_{{flag}}">
+                <input type="checkbox" class="filter__input" ng-click="$ctrl.sortBy(flag)">
+            </label>
         </div>
 
+    </div>
 
-        <!--<input type="checkbox" ng-click="$ctrl.sortBy('flash')">-->
-        <!--<input type="checkbox" ng-click="$ctrl.sortBy('sun')">-->
-        <!--<input type="checkbox" ng-click="$ctrl.sortBy('heart')">-->
-        <!--<input type="checkbox" ng-click="$ctrl.sortBy('flower')">-->
-    </p>
-
-    <pre>Sort by = {{$ctrl.propertyName}} </pre>
-
-    <item-list items="$ctrl.items" initial="$ctrl.initial"></item-list>-->
+    <item-list items="$ctrl.items" initial="$ctrl.initial" selected="$ctrl.item.active"></item-list>
 </div>

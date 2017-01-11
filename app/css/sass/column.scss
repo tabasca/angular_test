@@ -1,21 +1,56 @@
 .column {
-  width: 400px;
+  display: inline-block;
+  margin-bottom: 2em;
+  padding: 10px;
+  width: 15em;
   height: 400px;
   background: cornflowerblue;
 
   overflow-y: scroll;
-  float: left;
-  & ul {
+  &_result {
+    height: 165px;
+    background: thistle;
+    overflow: hidden;
+    & h2 {
+      text-align: center;
+    }
+  }
+  &__text {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background: rgba(173, 255, 47, 1);
+    cursor: pointer;
+    &_selected {
+      background: rgba(173, 255, 47, 0.4);
+    }
+  }
+  &__icon-set {
+    display: inline-block;
+    float: right;
+  }
+  &__label {
+    display: inline-block;
+  }
+  &__input {
+    display: inline-block;
+    width: 50%;
+    float: right;
+  }
+  &__list {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  & li {
-    margin: 5px 10px;
-    padding: 5px 10px;
-    background: greenyellow;
-  }
-  &_right {
-    float: right;
+    margin-top: 1em;
   }
 }

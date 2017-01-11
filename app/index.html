@@ -11,8 +11,23 @@
 </head>
 <body>
 
-    <left-column></left-column>
-    <right-column></right-column>
+    <div class="wrapper">
+
+        <left-column></left-column>
+
+        <div class="column column_result">
+
+            <h2>INFO</h2>
+
+            <span class="column__text">Name: {{item.name}}</span>
+            <span class="column__text">
+                Flags:
+                <span ng-repeat="flag in item.flags" class="icon icon_{{flag}}"></span>
+            </span>
+        </div>
+
+        <right-column></right-column>
+    </div>
 
 </body>
 </html>

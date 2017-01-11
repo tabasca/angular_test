@@ -1,15 +1,11 @@
 <div class="column">
-    <p>
-        Search:
-        <input type="text" ng-model="$ctrl.searchValue" ng-change="$ctrl.change()"/>
-    </p>
 
-    <p>
+    <label class="column__label">
         Sort:
         <input type="checkbox" ng-click="$ctrl.sortBy('name')">
-    </p>
+    </label>
 
-    <pre>Sort by = {{$ctrl.propertyName}}; reverse = {{$ctrl.reverse}}</pre>
+    <input type="text" ng-model="$ctrl.searchValue" ng-change="$ctrl.change()" placeholder="Text filter" class="column__input"/>
 
-    <item-list items="$ctrl.items" initial="$ctrl.initial"></item-list>
+    <item-list items="$ctrl.items" initial="$ctrl.initial" selected="$ctrl.item.active"></item-list>
 </div>

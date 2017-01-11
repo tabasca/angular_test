@@ -1,7 +1,10 @@
 
-<ul>
-    <li ng-repeat="item in $ctrl.items">
+<ul class="column__list">
+    <li ng-repeat="item in $ctrl.items" ng-click="checkItem(item)" ng-class="{column__item_selected: isChecked(item)}" class="column__item">
         <span>{{item.name}}</span>
-        <span ng-repeat="flag in item.flags">{{flag}}</span>
+        <div class="column__icon-set">
+            <span ng-repeat="flag in item.flags" class="icon icon_{{flag}}"></span>
+        </div>
+
     </li>
 </ul>

@@ -1,3 +1,49 @@
+html, body {
+	font-size: 14px;
+}
+
 body {
 	@include clearfix();
+}
+
+.wrapper {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.icon {
+	display: inline-block;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	background: red;
+	background-size: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+	&:last-child {
+		margin-right: 0;
+	}
+	&_flash {
+		background: yellow url('/img/flash.svg');
+	}
+	&_sun {
+		background: yellow url('/img/sun.svg');
+	}
+	&_flower {
+		background: yellow url('/img/flower.svg');
+	}
+	&_heart {
+		background: yellow url('/img/heart.svg');
+	}
+}
+
+.filter {
+	&__item {
+		display: inline-block;
+	}
+	&__input {
+		display: none;
+	}
 }
